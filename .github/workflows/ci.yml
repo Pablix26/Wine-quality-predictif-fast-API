@@ -31,7 +31,6 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           pip install --no-cache-dir -r requirements.txt
-          pip show pydantic
 
       # Installer les dépendances de tests, y compris pytest-cov
       - name: Install testing dependencies
@@ -60,16 +59,6 @@ jobs:
         with:
           name: test-results
           path: ./tests/results.xml
-
-      # (Optionnel) Télécharger le rapport de couverture à Codecov
-      - name: Upload coverage to Codecov
-        uses: codecov/codecov-action@v3
-        with:
-          token: ${{ secrets.CODECOV_TOKEN }}
-          files: ./coverage.xml
-          flags: unittests
-          name: codecov-umbrella
-          fail_ci_if_error: true
 
       # (Optionnel) Arrêter les services Docker Compose
       - name: Stop Docker Compose services
