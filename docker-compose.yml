@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  wine-predictor:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: wine-predictor
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./app/datasource:/app/data
+      - ./app/models:/app/models
+    environment:
+      - PYTHONUNBUFFERED=1
+    restart: unless-stopped

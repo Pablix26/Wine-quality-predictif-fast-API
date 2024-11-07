@@ -1,0 +1,46 @@
+.
+├── app
+│   ├── api
+│   │   ├── endpoints
+│   │   │   ├── __init__.py
+│   │   │   ├── ml_models.py
+│   │   │   ├── model.py
+│   │   │   └── __pycache__
+│   │   │       ├── __init__.cpython-38.pyc
+│   │   │       ├── ml_models.cpython-38.pyc
+│   │   │       └── model.cpython-38.pyc
+│   │   ├── models
+│   │   └── __pycache__
+│   │       └── config.cpython-38.pyc
+│   ├── authorization
+│   ├── config.py
+│   ├── datasource
+│   │   └── Wines.csv
+│   ├── domain
+│   ├── __init__.py
+│   ├── main.py
+│   ├── models
+│   │   ├── model_info.json
+│   │   └── wine_quality_model.joblib
+│   ├── __pycache__
+│   │   ├── config.cpython-38.pyc
+│   │   ├── __init__.cpython-38.pyc
+│   │   └── main.cpython-38.pyc
+│   ├── setup
+│   ├── static
+│   └── test
+│       ├── __init__.py
+│       ├── __pycache__
+│       │   ├── __init__.cpython-38.pyc
+│       │   └── test_ml_models.cpython-38-pytest-8.3.3.pyc
+│       └── test_ml_models.py
+├── arboressence.txt
+├── Dockerfile
+├── documentation
+│   ├── developer_guide.md
+│   └── domain_topside_data.md
+├── pipeline
+├── pytest.ini
+└── requirement.txt
+
+18 directories, 26 files

@@ -1,0 +1,12 @@
+__pycache__
+*.pyc
+*.pyo
+*.pyd
+*.git
+*.env
+*.DS_Store
+test/
+documentation/
+pipeline/
+arboressence.txt
+docker-compose.yml
