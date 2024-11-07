@@ -31,6 +31,7 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           pip install --no-cache-dir -r requirements.txt
+          pip show pydantic
 
       # Installer les dépendances de tests, y compris pytest-cov
       - name: Install testing dependencies
